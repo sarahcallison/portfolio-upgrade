@@ -1,4 +1,4 @@
-.project {
+.projects {
     text-decoration: none;
     color: #008080;
     display: inline-block;
@@ -15,7 +15,7 @@
 
   }
 
-  .figure-pic {
+  .project-pic {
       width: 100%;
       max-height: 200px;
   }
