@@ -9,12 +9,22 @@ a {
     color: rebeccapurple;
 }
 
-#welcome-section {
+.intro {
     top: 0;
     background: linear-gradient( #EE475B, #47EEB3 120%);
     width: 100%;
     min-height: 55vh;
     padding-top: 45vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.intro div {
+    width: 400px;
+    height: 340px;
+    text-align: center;
 }
 
 h1 {
