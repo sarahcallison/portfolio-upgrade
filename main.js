@@ -2,7 +2,7 @@ import { films } from './films.js';
 
 const intro = document.querySelector('.intro');
 
-films.sort((a,b) => (a.episode_id > b.episodes_id) ? 1 : -1);
+films.sort((a,b) => (a.episode_id > b.episode_id) ? 1 : -1 );
 
 //let title = films[0].title
 //let crawl = films[0].opening_crawl
