@@ -15,10 +15,10 @@ a {
     width: 100%;
     min-height: 55vh;
     padding-top: 45vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-between;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    /* align-content: space-between; */
 }
 
 .intro div {
@@ -29,7 +29,7 @@ a {
 
 h1 {
     color: #fff;
-    margin: 10px;
+    margin: 20px;
 }
 
 h4 {

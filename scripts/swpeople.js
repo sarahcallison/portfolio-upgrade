@@ -6,4 +6,4 @@ const other = people.filter(
     person => (person.gender === "n/a") || (person.gender === "none") || 
     (person.gender === "hermaphrodite"));
 
-    console.log("why won't you show?");
+    console.log(other);
