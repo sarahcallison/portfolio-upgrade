@@ -1,9 +1,20 @@
+// import { starships } from '../data/starships.js';
+
 // import { films } from '../data/films.js';
 // import { people } from '../data/people.js';
 
-// const intro = document.querySelector('.intro');
+// const intro = document.querySelector('.ships-container');
 
 // films.sort((a,b) => (a.episode_id > b.episode_id) ? 1 : -1 );
+
+// const fastest = starships.sort((a,b) => b.max_atmosphering_speed - a.max_atmosphering_speed)
+// console.log(fastest);
+
+
+
+
+// console.log("original" + starships);
+
 
 // //let title = films[0].title
 // //let crawl = films[0].opening_crawl
