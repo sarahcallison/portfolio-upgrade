@@ -3,6 +3,7 @@ body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
     text-align: center;
+    height: 55vh;
 }
 
 img {
@@ -12,15 +13,27 @@ img {
 h1 {
     color: white;
     position: relative;
-    bottom: 550px;
+    bottom: 475px;
+    margin: 0;
     
 }
 
-p {
-    margin: 0;
+.lukeQuote {
+    color: white;
+    position: relative;
+    bottom: 450px;
+    font-size: 1rem;
+}
+
+#tatListCont {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 400px;
     color: white;
 }
 
-#tatListCont{
-display: flex;
+#tatListCont p {
+    margin: 5px;
+    font-size: 1rem;
 }

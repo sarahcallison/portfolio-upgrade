@@ -15,7 +15,7 @@ import { people } from '../data/people.js'
     const homeLess = people.filter(person => person.homeworld === "https://swapi.co/api/planets/28/");
     
     tatooinePeeps.forEach(person => {
-        let tatListCont = document.getElementById('#tatListCont')
+        let tatListCont = document.getElementById('tatListCont')
         
         let tatList = document.createElement('div')
         tatList.className = 'tatList'
