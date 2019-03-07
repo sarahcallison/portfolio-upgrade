@@ -1,6 +1,11 @@
 import { starships } from '../data/starships.js';
 
 let newShips = starships.filter( function(val) { 
+    let speedStr = val.max_atmosphering_speed
+    let speedIndex = speedStr.indexOf('km')
+    if (speedIndex !==-1) {
+        val.max_atmosphering_speed = speedStr.slice(0, 4)
+    } 
     return val.max_atmosphering_speed !== "n/a" && val.max_atmosphering_speed !== "unknown"});
 
 console.log(newShips);
