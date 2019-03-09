@@ -14,6 +14,15 @@ import { people } from '../data/people.js'
 
     const homeLess = people.filter(person => person.homeworld === "https://swapi.co/api/planets/28/");
     
+    const getLastNumber = url => {
+        let end = url.lastIndexOf('/')
+        let start = end - 2
+        if (url.charAt(start) === '/'){
+            start++
+        }
+        return url.slice(start, end)
+    }
+
     tatooinePeeps.forEach(person => {
         let tatListCont = document.getElementById('tatListCont')
         

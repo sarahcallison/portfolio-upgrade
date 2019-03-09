@@ -1,5 +1,7 @@
 import { starships } from '../data/starships.js';
 
+//add in images, card from Bulma? starwars-visualguide.com
+
 let newShips = starships.filter( function(val) { 
     let speedStr = val.max_atmosphering_speed
     let speedIndex = speedStr.indexOf('km')
