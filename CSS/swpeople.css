@@ -1,35 +1,28 @@
 body {
     background-color: black;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Nunito Sans Light', sans-serif;
     margin: 0;
     text-align: center;
     height: 55vh;
+    background-image: url(mars.jpg);
 }
 
-img {
-    width: 100%;
-}
-
-h1 {
+#heading {
     color: white;
-    position: relative;
-    bottom: 475px;
-    margin: 0;
-    
+    letter-spacing: 8px;
+    font-size: 2rem;
+    margin-bottom: 15px;
 }
 
-.lukeQuote {
+#subHeading {
     color: white;
-    position: relative;
-    bottom: 450px;
     font-size: 1rem;
+    letter-spacing: 6px;
 }
 
 #tatListCont {
     display: flex;
     flex-direction: column;
-    position: relative;
-    bottom: 400px;
     color: white;
 }
 
