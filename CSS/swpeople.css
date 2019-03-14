@@ -3,8 +3,8 @@ body {
     font-family: 'Nunito Sans Light', sans-serif;
     margin: 0;
     text-align: center;
-    height: 55vh;
     background-image: url(mars.gif);
+    background-repeat: no-repeat;
 }
 
 #heading {
@@ -12,21 +12,54 @@ body {
     letter-spacing: 8px;
     font-size: 2rem;
     margin-bottom: 15px;
+    margin-top: 110px;
 }
 
 #subHeading {
     color: white;
     font-size: 1rem;
     letter-spacing: 6px;
+    margin-bottom: 110px;
 }
 
-#tatListCont {
+#tatContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 100px 0px 100px;
+}
+
+.tile {
+    width: 175px;
     display: flex;
     flex-direction: column;
+    margin: 0px 20px 75px 0px;
+    
+}
+
+p {
     color: white;
 }
 
-#tatListCont p {
-    margin: 5px;
-    font-size: 1rem;
+figure {
+    width: 175px;
+    margin: 0px;
 }
+
+img {
+    width: 175px;
+}
+
+figcaption {
+background-color: white;
+color: black;
+padding: 9px;
+position: relative;
+bottom: 10px;
+font-size: .85rem;
+font-family: 'Nunito Sans', sans-serif;
+max-width: 175px;
+height: 70px;
+}
+
