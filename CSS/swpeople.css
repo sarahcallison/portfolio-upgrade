@@ -63,3 +63,17 @@ max-width: 175px;
 height: 70px;
 }
 
+footer {
+    margin-bottom: 50px;
+}
+
+footer p {
+    letter-spacing: 6px;
+    color: white;
+    font-size: .8rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
