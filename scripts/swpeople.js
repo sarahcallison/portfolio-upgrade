@@ -22,7 +22,7 @@ tatooinePeeps.forEach(person => {
         person.quote = "C-3PO: What a desolate place this is."
     }
     else if (person.name === "Darth Vader") {
-        person.quote = "Darth Vader: I don't like sand."
+        person.quote = "Darth Vader (as Anakin): I don't like sand."
     }
     else if (person.name === "Owen Lars") {
         person.quote = "Owen Lars: It's only one more season."
