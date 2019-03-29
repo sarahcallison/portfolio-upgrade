@@ -1,16 +1,5 @@
 import { people } from '../data/people.js'
 
-// Array.forEach(item => {
-// fetch('http://example.com/movies.json')
-//   .then(function(response) {
-//     return response.json();
-//   })
-//   .then(function(myJson) {
-//     console.log(JSON.stringify(myJson));
-//     createCard(myJson)
-//   });
-// })
-
 const getLastNumber = url => {
   let end = url.lastIndexOf('/')
   let start = end - 2
@@ -35,45 +24,54 @@ const allStars = people.filter(person => {
   }
 })
 
-console.log(allStars)
-
-
-
   const mainContainer = document.querySelector('.cardContainer')
 
+  function createCard(person) {
+    let card = document.createElement('div')
+    card.className = 'box'
+    let figure = document.createElement('figure')
+    let name = document.createElement('figcaption')
+    let image = document.createElement('img')
+
+    name.textContent = person.name
+    image.src = person.imagePath
+
+    figure.appendChild(image)
+    figure.appendChild(name)
+    card.appendChild(figure)
+    mainContainer.appendChild(card)
+  }
+
   allStars.forEach(person => {
-      let card = document.createElement('div')
-      card.className = 'box'
-      let figure = document.createElement('figure')
-      let name = document.createElement('figcaption')
-      let image = document.createElement('img')
-
-      name.textContent = person.name
-      image.src = person.imagePath
-
-      figure.appendChild(image)
-      figure.appendChild(name)
-      card.appendChild(figure)
-      mainContainer.appendChild(card)
+    createCard(person);
   })
 
+  class Card {
+    constructor(id) {
+    // this.id = id,
+    this.imageSRC = `https://starwars-visualguide.com/assets/img/characters/${id}.jpg`
+    }
+  }
 
+function addNewPlayer(obj) {
+  let newCard = document.createElement('div')
+  newCard.className = 'box'
+  let newFigure = document.createElement('figure')
+  let newImage = document.createElement('img')
 
-// class Card {
-//   constructor(id-how is this the input?) {
-// if (id === person.id)
-// 
-//   }
-// }
+  newImage.src = obj.imageSRC
+  newFigure.appendChild(newImage)
+  newCard.appendChild(newFigure)
+  mainContainer.appendChild(newCard)
+}
+  
+const newPlayerButton = document.querySelector('button')
 
-// let newPokemon = new Pokemon(80, 'Saremon')
+newPlayerButton.addEventListener('click', function() {
+  let newID = document.getElementById('enterID').value
+  addNewPlayer(new Card(newID))
+})
 
-// const newCardButton = document.querySelector('button')
-
-// newCardButton.addEventListener('click'), function() {
-//   let newCard = prompt('Enter the name of your new pokemon')
-//   createCard(newPokemon)
-// }
 
 // On the back: height and mass and species. 
 // Have input content be the id, set whatever to be over 25 for the input 

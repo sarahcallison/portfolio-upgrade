@@ -40,6 +40,14 @@ margin: 15px 0px 25px 0px;
     letter-spacing: 9px;
   }
 
+  p a {
+    color: yellow;
+  }
+
+  p a:hover {
+    color: rgb(143, 143, 143);
+  }
+
   .cardContainer {
     display: flex;
     flex-wrap: wrap;
@@ -51,6 +59,38 @@ margin: 15px 0px 25px 0px;
   .box {
     width: 200px;
     margin: 0px 15px;
+  }
+
+  #add {
+    margin: 90px 0px 60px 0px;
+  }
+
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  input {
+    width: 300px;
+    height: 35px;
+    border: none;
+    border-radius: 4px;
+    background-color: beige;
+    font-family: 'Nunito Sans Light', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 5px;
+  }
+  
+  .button {
+    width: 150px;
+    font-family: 'Nunito Sans Light', sans-serif;
+    color: black;
+    letter-spacing: 5px;
+    font-size: 1rem;
+    margin: 30px 0px 50px 0px;
   }
 
   
