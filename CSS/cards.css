@@ -3,8 +3,19 @@ body {
     text-align: center;
 }
 
+#heading, .logo, #homeText, .cardContainer {
+  position: relative;
+}
+
+#heading {
+  padding: 45px 0px 0px 50px;
+  letter-spacing: 15px;
+}
+
 .logo {
 width: 300px;
+padding-right: 10px;
+margin: 15px 0px 25px 0px;
 }
 
 .stars, .twinkling {
@@ -25,7 +36,8 @@ width: 300px;
 
   P {
     color: white;
-    
+    font-family: 'Nunito Sans Light', sans-serif;
+    letter-spacing: 9px;
   }
 
   .cardContainer {
@@ -33,6 +45,7 @@ width: 300px;
     flex-wrap: wrap;
     justify-content: center;
     margin: 50px 0px 0px 0px;
+    padding: 0px 200px;
   }
 
   .box {
