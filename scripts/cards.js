@@ -11,10 +11,6 @@ import { people } from '../data/people.js'
 //   });
 // })
 
-// const allStars = people.filter(function(person) {
-
-// } )
-
 const getLastNumber = url => {
   let end = url.lastIndexOf('/')
   let start = end - 2
@@ -61,19 +57,21 @@ console.log(allStars)
       mainContainer.appendChild(card)
   })
 
-// class  {
-//   constructor(id, name) {
-// this.id = id,
-// this.name  = name
+
+
+// class Card {
+//   constructor(id-how is this the input?) {
+// if (id === person.id)
+// 
 //   }
 // }
 
 // let newPokemon = new Pokemon(80, 'Saremon')
 
-// const newPokemonButton = document.querySelector('button')
+// const newCardButton = document.querySelector('button')
 
-// newPokemonButton.addEventListener('click'), function() {
-//   let newPokeName = prompt('Enter the name of your new pokemon')
+// newCardButton.addEventListener('click'), function() {
+//   let newCard = prompt('Enter the name of your new pokemon')
 //   createCard(newPokemon)
 // }
 

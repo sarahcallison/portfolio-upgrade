@@ -3,7 +3,7 @@ body {
     text-align: center;
 }
 
-#heading, .logo, #homeText, .cardContainer {
+#heading, .logo, .text, .cardContainer {
   position: relative;
 }
 
