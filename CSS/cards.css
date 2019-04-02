@@ -35,7 +35,7 @@ margin: 15px 0px 25px 0px;
   }
 
   P {
-    color: yellow;
+    color: white;
     font-family: 'Nunito Sans Light', sans-serif;
     letter-spacing: 9px;
   }
@@ -52,17 +52,18 @@ margin: 15px 0px 25px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 50px 0px 0px 0px;
+    margin: 75px 0px 0px 0px;
     padding: 0px 200px;
   }
 
   .box {
     width: 200px;
     margin: 0px 15px;
+    padding: 1rem;
   }
 
   #add {
-    margin: 90px 0px 60px 0px;
+    margin: 90px 0px 40px 0px;
   }
 
   .inputContainer {
