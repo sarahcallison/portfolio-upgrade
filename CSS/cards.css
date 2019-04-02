@@ -1,6 +1,7 @@
 body {
-    background-color: black;
+    background-color: #000000;
     text-align: center;
+    font-family: 'Nunito Sans Light', sans-serif;
 }
 
 #heading, .logo, .text, .cardContainer {
@@ -36,7 +37,6 @@ margin: 15px 0px 25px 0px;
 
   P {
     color: white;
-    font-family: 'Nunito Sans Light', sans-serif;
     letter-spacing: 9px;
   }
 
@@ -94,4 +94,11 @@ margin: 15px 0px 25px 0px;
     margin: 30px 0px 50px 0px;
   }
 
+  a.topLink {
+text-decoration: none;
+color: yellow;
+display: block;
+text-align: right;
+letter-spacing: 9px;
+  }
   
