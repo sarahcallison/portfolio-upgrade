@@ -31,10 +31,11 @@ function createCard(person) {
   card.className = 'card'
 
   let cardFront = document.createElement('div')
-  cardFront.className = 'box card__face'
+  cardFront.className = 'card__face'
   let figure = document.createElement('figure')
   let name = document.createElement('figcaption')
   let image = document.createElement('img')
+  image.className = "image"
 
   name.textContent = person.name
   image.src = person.imagePath
@@ -44,12 +45,13 @@ function createCard(person) {
   cardFront.appendChild(figure)
 
   let cardBack = document.createElement('div')
-  cardBack.className = 'box card__face card__face--back'
+  cardBack.className = 'card__face card__face--back'
   let imageBack = document.createElement('img')
   let height = document.createElement('p')
   let mass = document.createElement('p')
 
   imageBack.src = '2000px-Star_Wars_Yellow_Logo.svg.png'
+  imageBack.className = 'backImg'
   height.textContent = "Height: " + person.height
   mass.textContent = "Mass: " + person.mass
 
@@ -69,14 +71,14 @@ function createCard(person) {
 
 allStars.forEach(person => {
   createCard(person);
-  let i = person.id - 1
-  console.log(i)
+  // let i = person.id - 1
+  // console.log(i)
 })
 
 
 
 class Card {
-  constructor(id) {}
+  constructor(id) {
     this.imageSRC = `https://starwars-visualguide.com/assets/img/characters/${id}.jpg`
   }
 }
@@ -102,9 +104,10 @@ function addNewPlayer(obj) {
   card.className = 'card'
 
   let newCard = document.createElement('div')
-  newCard.className = 'box'
+  newCard.className = 'card__face'
   let newFigure = document.createElement('figure')
   let newImage = document.createElement('img')
+  newImage.className = 'image'
 
   newImage.src = obj.imageSRC
 
@@ -113,8 +116,9 @@ function addNewPlayer(obj) {
   card.appendChild(newCard)
 
   let newCardBack = document.createElement('div')
-  newCardBack.className = 'box card__face card__face--back'
+  newCardBack.className = 'card__face card__face--back'
   let newImageBack = document.createElement('img')
+  newImageBack.className = "backImg"
 
   newImageBack.src = '2000px-Star_Wars_Yellow_Logo.svg.png'
 
@@ -134,7 +138,6 @@ newPlayerButton.addEventListener('click', function () {
   addNewPlayer(new Card(newID))
 })
 
-let i = allStars[24].id - 1
-console.log(allStars[i].name)
+
 
 // i = person.id - 1, reference name property using i for index [i], how to reference specific object property
