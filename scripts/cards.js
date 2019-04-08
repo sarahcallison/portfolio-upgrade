@@ -71,8 +71,6 @@ function createCard(person) {
 
 allStars.forEach(person => {
   createCard(person);
-  // let i = person.id - 1
-  // console.log(i)
 })
 
 
@@ -83,19 +81,6 @@ class Card {
   }
 }
 
-
-// function addNewPlayer(obj) {
-//   let newCard = document.createElement('div')
-//   newCard.className = 'box'
-//   let newFigure = document.createElement('figure')
-//   let newImage = document.createElement('img')
-
-//   newImage.src = obj.imageSRC
-
-//   newFigure.appendChild(newImage)
-//   newCard.appendChild(newFigure)
-//   mainContainer.appendChild(newCard)
-// }
 
 function addNewPlayer(obj) {
   let scene = document.createElement('div')
