@@ -125,4 +125,3 @@ newPlayerButton.addEventListener('click', function () {
 
 
 
-// i = person.id - 1, reference name property using i for index [i], how to reference specific object property
