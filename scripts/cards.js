@@ -50,7 +50,7 @@ function createCard(person) {
   let height = document.createElement('p')
   let mass = document.createElement('p')
 
-  imageBack.src = '2000px-Star_Wars_Yellow_Logo.svg.png'
+  imageBack.src = 'images/2000px-Star_Wars_Yellow_Logo.svg.png'
   imageBack.className = 'backImg'
   height.textContent = "Height: " + person.height
   mass.textContent = "Mass: " + person.mass
@@ -105,7 +105,7 @@ function addNewPlayer(obj) {
   let newImageBack = document.createElement('img')
   newImageBack.className = "backImg"
 
-  newImageBack.src = '2000px-Star_Wars_Yellow_Logo.svg.png'
+  newImageBack.src = 'images/2000px-Star_Wars_Yellow_Logo.svg.png'
 
   newCardBack.appendChild(newImageBack)
   card.appendChild(newCardBack)
