@@ -21,12 +21,6 @@ a:hover {
     padding-top: 45vh;
 }
 
-/* .intro div {
-    width: 400px;
-    height: 340px;
-    text-align: center;
-} */
-
 h1 {
     color: #fff;
     margin: 20px;
@@ -35,10 +29,6 @@ h1 {
 h4 {
     color: rebeccapurple;
     margin: 0;
-}
-
-#navbar {
-    position: fixed;
 }
 
 nav ul {
@@ -55,12 +45,12 @@ nav ul li {
     font-weight: 600;
 }
 
-.work-header {
+#projects {
     margin: 40px 0px;
     color: #262626;
 }
 
-#projects {
+.projectsContainer {
     display: flex;
     flex-wrap: wrap;
     padding: 0px 100px;
