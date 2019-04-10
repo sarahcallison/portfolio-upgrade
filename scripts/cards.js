@@ -24,7 +24,8 @@ const allStars = people.filter(person => {
 
 const mainContainer = document.querySelector('.cardContainer')
 
-function createCard(person) {
+function createCard(arrayArg) {
+  arrayArg.forEach( (person) => {
   let scene = document.createElement('div')
   scene.className = 'scene'
   let card = document.createElement('div')
@@ -66,62 +67,41 @@ function createCard(person) {
 
   card.addEventListener('click', function () {
     card.classList.toggle('is-flipped');
-  });
+  })
+
+})
 }
 
-allStars.forEach(person => {
-  createCard(person);
-})
-
-
+createCard(allStars)
 
 class Card {
-  constructor(id) {
+  constructor(id, name, height, mass) {
+    this.name = name,
+    this.height = height,
+    this.mass = mass,
     this.imageSRC = `https://starwars-visualguide.com/assets/img/characters/${id}.jpg`
   }
 }
 
 
-function addNewPlayer(obj) {
-  let scene = document.createElement('div')
-  scene.className = 'scene'
-  let card = document.createElement('div')
-  card.className = 'card'
-
-  let newCard = document.createElement('div')
-  newCard.className = 'card__face'
-  let newFigure = document.createElement('figure')
-  let newImage = document.createElement('img')
-  newImage.className = 'image'
-
-  newImage.src = obj.imageSRC
-
-  newFigure.appendChild(newImage)
-  newCard.appendChild(newFigure)
-  card.appendChild(newCard)
-
-  let newCardBack = document.createElement('div')
-  newCardBack.className = 'card__face card__face--back'
-  let newImageBack = document.createElement('img')
-  newImageBack.className = "backImg"
-
-  newImageBack.src = 'images/2000px-Star_Wars_Yellow_Logo.svg.png'
-
-  newCardBack.appendChild(newImageBack)
-  card.appendChild(newCardBack)
-  scene.appendChild(card)
-  mainContainer.appendChild(scene)
-
-  card.addEventListener('click', function () {
-    card.classList.toggle('is-flipped');
-  });
-}
-
 const newPlayerButton = document.querySelector('button')
 newPlayerButton.addEventListener('click', function () {
   let newID = document.getElementById('enterID').value
-  addNewPlayer(new Card(newID))
+
+  let newPerson = people.filter( function (person) {
+    if (newID === person.id) {
+      return [{
+  name : person.name,
+  height: person.height,
+  mass : person.mass,
+  imagePath: person.imagPath
+    }] 
+  }
+   })
+   console.log(newPerson)
+  createCard(newPerson)
 })
+
 
 
 
