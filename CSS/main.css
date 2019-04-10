@@ -47,6 +47,7 @@ nav ul li {
     display: inline-block;
     margin: 15px 30px 0px 0px;
     font-weight: 600;
+    font-size: .9rem;
 }
 
 .projectHeader, .contactHeader {
@@ -95,7 +96,7 @@ figure.project-tile {
   }
   
   .hoverContainer:hover .project-pic {
-    opacity: 0.2;
+    opacity: 0.17;
   }
   
 .hoverContainer:hover .overlay {
@@ -126,7 +127,7 @@ figure.project-tile {
       background-color: #262626;
       color: #fff;
       padding: 8px 0px;
-      font-size: 0.65rem;
+      font-size: 0.7rem;
   }
 
   @media only screen and (max-width: 500px) {
