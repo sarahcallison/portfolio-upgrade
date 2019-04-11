@@ -47,7 +47,7 @@ margin: 15px 0px 25px 0px;
     text-decoration: none;
   }
 
-  p a:hover {
+ p a:hover {
     color: rgb(143, 143, 143);
   }
 
@@ -152,14 +152,8 @@ margin: 15px 0px 25px 0px;
     margin: 30px 0px 50px 0px;
   }
 
-  a.topLink {
-text-decoration: none;
-color: yellow;
-display: block;
-text-align: right;
-padding: 30px 35px;
-letter-spacing: 9px;
-  }
-
-  
+ .topLink {
+   text-align: right;
+   margin: 0px 30px 35px 0px;
+ }
   
