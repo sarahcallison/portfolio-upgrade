@@ -126,7 +126,7 @@ figure.project-tile {
     color: #262626;
     font-size: 1.15rem;
     font-family: 'Nunito Sans Light', sans-serif;
-    /* letter-spacing: 7px; */
+    letter-spacing: 6px;
     text-align: left;
   }
 
