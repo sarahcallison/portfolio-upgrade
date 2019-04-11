@@ -30,7 +30,7 @@ a:hover {
     color: #fff;
     margin: 20px;
     font-size: 4rem;
-    font-family: 'Nunito Sans ExtraLight', sans-serif;
+    font-family: 'Nunito Sans Light', sans-serif;
     letter-spacing: 35px;
     padding-left: 120px;
     bottom: 400px;
@@ -62,11 +62,12 @@ nav ul li {
 .projectHeader, .contactHeader {
 color: #262626;
 font-family: 'Nunito Sans Light', sans-serif;
+letter-spacing: 25px;
 }
 
 .projectHeader {
   margin: 70px 0px 70px 0px;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .contactHeader {
@@ -104,9 +105,10 @@ figure.project-tile {
   .overlay {
     transition: .5s ease;
     opacity: 0;
+    width: 75%;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 43%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
@@ -122,8 +124,10 @@ figure.project-tile {
 
   .text {
     color: #262626;
-    font-size: 1.2rem;
-    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.15rem;
+    font-family: 'Nunito Sans Light', sans-serif;
+    /* letter-spacing: 7px; */
+    text-align: left;
   }
 
   .text p {
