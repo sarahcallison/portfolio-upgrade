@@ -7,12 +7,12 @@ body {
 
 a {
     text-decoration: none;
-    color: rebeccapurple;
+    color: #262626;
     letter-spacing: 2px;
 }
 
 a:hover {
-    color: #3D3D3D;  
+    color: rgb(146, 146, 146);  
 }
 
 .intro {
@@ -50,11 +50,31 @@ nav ul li {
     font-size: .9rem;
 }
 
-.projectHeader, .contactHeader {
-    margin: 70px 0px;
-    color: #262626;
-    font-size: 1.4rem;
-    font-family: 'Nunito Sans Light', sans-serif;
+.projectHeader, .andHeader, .inspirationHeader, .contactHeader {
+  color: #262626;
+font-size: 1.4rem;
+font-family: 'Nunito Sans Light', sans-serif;
+}
+
+.projectHeader {
+  margin: 70px 0px 25px 0px;
+
+}
+
+.andHeader {
+  margin-bottom: 25px;
+}
+
+.andHeader {
+  margin-bottom: 25px;
+}
+
+.inspirationHeader {
+  margin-bottom: 50px;
+}
+
+.contactHeader {
+    margin: 45px 0px;
   }
 
 .projectsContainer {
