@@ -22,6 +22,10 @@ a:hover {
   height: 664px;
 }
 
+figure.powder {
+  margin: 0;
+}
+
 .nameHeader, h4 {
   position: relative; 
 }
@@ -48,14 +52,14 @@ h4 {
 nav ul {
     text-align: right;
     position: fixed;
-    right: 15px;
+    right: 20px;
     width: 100%;
     list-style-type: none;
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0px 20px 30px 0px;
+    margin: 0px 0px 30px 20px;
     font-size: .9rem;
 }
 
