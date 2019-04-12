@@ -59,21 +59,18 @@ nav ul li {
     font-size: .9rem;
 }
 
-.projectHeader, .contactHeader {
-color: #262626;
-font-family: 'Nunito Sans Light', sans-serif;
-}
-
 .projectHeader {
   margin: 70px 0px 70px 0px;
   font-size: 1.7rem;
   padding-left: 30px;
   letter-spacing: 25px;
+  font-family: 'Nunito Sans Light', sans-serif;
 }
 
 .contactHeader {
     margin: 45px 0px;
     font-size: 1.4rem;
+    font-family: 'Nunito Sans Light', sans-serif;
   }
 
 .projectsContainer {
