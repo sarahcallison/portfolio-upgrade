@@ -35,7 +35,7 @@ a:hover {
     height: 125px;
     text-align: right;
     position: fixed;
-    top: 65px;
+    top: 60px;
     left: 81.8%;
 }
 
@@ -53,9 +53,9 @@ img.pdf {
     width: 100%;
     text-align: right;
     position: fixed;
-    right: 12%;
+    right: 8.5%;
     top: 27.5%;
-    font-family: 'Nunito Sans ExtraLight', sans-serif;
+    font-family: 'Nunito Sans Light', sans-serif;
     font-size: 0.85rem;
 }
 
