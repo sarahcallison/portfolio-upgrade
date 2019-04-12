@@ -53,14 +53,14 @@ img.pdf {
     width: 100%;
     text-align: right;
     position: fixed;
-    right: 8.5%;
+    right: 1.1%;
     top: 27.5%;
     font-family: 'Nunito Sans Light', sans-serif;
     font-size: 0.85rem;
 }
 
 .container {
-    margin: 0 30% 0 25%;
+    margin: 0 10% 0 25%;
     width: 632px;
     display: flex;
     flex-direction: column;
@@ -73,14 +73,14 @@ figure.headerImg {
 .copyHeader {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1.1rem;
-    margin: 40px 0 15px 0;
+    margin: 15px 0 0 0;
     letter-spacing: 2px;
     font-weight: 500;
     font-weight: bold;
 }
 
 .summaryHeader {
-    margin-top: 65px;
+    margin-top: 55px;
 }
 
 img.fig1, figure.fig1 {
@@ -88,9 +88,21 @@ img.fig1, figure.fig1 {
     margin: auto;
 }
 
+figure.fig1 {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 img.fig2, figure.fig2 {
     width: 300px;
     margin: auto;
+}
+
+figure.fig2 {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 img.fig2 {
@@ -103,6 +115,12 @@ figcaption {
     text-align: left;
 }
 
+.topLink {
+    text-align: right;
+    font-size: 0.9rem;
+    margin-right: 15px;
+}
+
 footer {
     background-color: #262626;
     color: #fff;
@@ -110,5 +128,5 @@ footer {
     font-size: 0.7rem;
     letter-spacing: 6px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 60px;
 }

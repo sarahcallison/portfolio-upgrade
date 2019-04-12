@@ -62,12 +62,13 @@ nav ul li {
 .projectHeader, .contactHeader {
 color: #262626;
 font-family: 'Nunito Sans Light', sans-serif;
-letter-spacing: 25px;
 }
 
 .projectHeader {
   margin: 70px 0px 70px 0px;
   font-size: 1.7rem;
+  padding-left: 30px;
+  letter-spacing: 25px;
 }
 
 .contactHeader {
