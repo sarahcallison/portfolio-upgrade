@@ -85,7 +85,7 @@ figure.headerImg {
 }
 
 img.fig1, figure.fig1 {
-    width: 500px;
+    width: 100%;
     margin: auto;
 }
 
@@ -95,9 +95,9 @@ figure.fig1 {
     margin-bottom: 10px;
 }
 
-img.fig2, figure.fig2 {
+img.fig2 {
     width: 300px;
-    margin: auto;
+    padding: 15px;
 }
 
 figure.fig2 {
