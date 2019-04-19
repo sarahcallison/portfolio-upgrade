@@ -29,7 +29,10 @@ a:hover {
 
 #intro {
   margin-right: 100px;
-  height: 664px;
+  /* height: 664px;
+height: 65vh; */
+max-height: 100vh;
+/* padding-top: 45vh; */
 }
 
 figure.powder {
@@ -59,7 +62,7 @@ h4 {
 }
 
 .projectHeader {
-  margin: 70px 0px 70px 0px;
+  margin: 70px 0;
   font-size: 1.7rem;
   padding-left: 30px;
   letter-spacing: 25px;
@@ -137,10 +140,11 @@ figure.project-tile {
 .about {
   text-align: left;
   width: 50%;
+  margin: auto;
 }
 
 figure.contactImg {
-  width: 50%;
+  width: 40%;
   margin: 0;
 }
 
@@ -150,12 +154,41 @@ img.contactImg {
   width: 100%;
 }
 
+.name {
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+  margin: 0;
+}
+
+.uvu {
+  margin: 5px 0 30px 0;
+  letter-spacing: 6px;
+  font-size: 0.9rem;
+}
+
+.contactInfo a {
+  font-size: 0.95rem;
+} 
+
+.opportunity {
+  font-size: 0.95rem;
+}
+
+.contactInfo {
+  font-size: 0.95rem;
+  letter-spacing: 6px;
+} 
+
   footer {
       background-color: #262626;
       color: #fff;
-      padding: 8px 0px;
-      font-size: 0.7rem;
+      padding: 6px 0px;
+      font-size: 0.66rem;
       letter-spacing: 2.5px;
+  }
+
+  footer a {
+    color: white;
   }
 
   @media only screen and (max-width: 600px) {
@@ -181,16 +214,17 @@ img.contactImg {
     .nameHeader, h4 {
       position: relative;
       bottom: 200px;
+      right: 25px;
     }
 
     .nameHeader {
-      font-size: 2rem;
-      letter-spacing: 25px;
+      font-size: 1.8rem;
+      letter-spacing: 20px;
     }
 
     h4 {
-      font-size: 1rem;
-      letter-spacing: 15px;
+      font-size: .9rem;
+      letter-spacing: 10px;
     }
   }
 
