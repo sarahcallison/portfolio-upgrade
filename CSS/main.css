@@ -117,7 +117,7 @@ figure.project-tile {
   }
   
   .hoverContainer:hover .project-pic {
-    opacity: 0.17;
+    opacity: 0.1;
   }
   
 .hoverContainer:hover .overlay {
@@ -128,7 +128,7 @@ figure.project-tile {
     color: #262626;
     font-size: 1.15rem;
     font-family: 'Nunito Sans Light', sans-serif;
-    letter-spacing: 6px;
+    letter-spacing: 1px;
     text-align: left;
   }
 

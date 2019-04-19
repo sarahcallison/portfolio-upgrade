@@ -47,6 +47,11 @@ figure.pdf {
 img.pdf {
     width: 230px;
     height: 125px;
+    box-shadow: 5px 5px 5px rgb(233, 232, 232);
+}
+
+.pdf img:hover {
+    opacity: 0.4;
 }
 
 .pdfCaption {
@@ -129,7 +134,7 @@ footer {
     color: #fff;
     padding: 8px 0px;
     font-size: 0.7rem;
-    letter-spacing: 6px;
+    letter-spacing: 2.5px;
     text-align: center;
     margin-top: 60px;
 }
