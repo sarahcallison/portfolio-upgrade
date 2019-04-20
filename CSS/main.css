@@ -73,7 +73,7 @@ h4 {
     font-size: 1.4rem;
   }
 
-.projectsContainer {
+.dev, .ux-ui {
     display: flex;
     flex-wrap: wrap;
     padding: 0px 100px;
@@ -134,18 +134,19 @@ figure.project-tile {
 #contact {
     margin-top: 80px;
     display: flex;
-    padding: 0 250px;
+    padding: 0 120px;
 }
 
 .about {
   text-align: left;
-  width: 50%;
-  margin: auto;
+  margin: auto 0 auto 25px;
 }
 
 figure.contactImg {
   width: 40%;
-  margin: 0;
+  margin: auto 0;
+  padding-left: 180px;
+
 }
 
 img.contactImg {
@@ -162,21 +163,33 @@ img.contactImg {
 
 .uvu {
   margin: 5px 0 30px 0;
-  letter-spacing: 6px;
+  letter-spacing: 1.5px;
   font-size: 0.9rem;
+  font-family: 'Nunito Sans ExtraLight', sans-serif;
 }
 
 .contactInfo a {
   font-size: 0.95rem;
+  letter-spacing: 1.5px;
+  font-family: 'Nunito Sans ExtraLight', sans-serif;
 } 
 
 .opportunity {
   font-size: 0.95rem;
+  letter-spacing: 1.5px;
+  font-family: 'Nunito Sans ExtraLight', sans-serif;
 }
 
 .contactInfo {
   font-size: 0.95rem;
-  letter-spacing: 6px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(left, turquoise , red);
+   background: -o-linear-gradient(right, turquoise , red);
+   background: -moz-linear-gradient(right, turquoise , red);
+   background: linear-gradient(to right, turquoise , red); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 } 
 
   footer {
