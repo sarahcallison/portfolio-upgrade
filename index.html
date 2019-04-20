@@ -7,6 +7,7 @@
     <title>Sarah's Personal Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css" />
 
 </head>
@@ -14,9 +15,7 @@
 <body>
     <nav id="navbar">
         <ul>
-            <li><a href="#intro">ABOUT</a></li>
-            <li><a href="#projects">WORK</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#projects">PORTFOLIO</a></li>
         </ul>
     </nav>
     <div id="intro">
@@ -27,222 +26,215 @@
 
     <div id="projects"></div>
     <p class="projectHeader">PORTFOLIO</p>
-    <p>(filter in progress)</p>
-    <!-- <div id="btnContainer">
-        <button class="btn active" onclick="filterSelection('about')">About</button>
-        <button class="btn" onclick="filterSelection('Dev')">Dev</button>
-        <button class="btn" onclick="filterSelection('UX/UI')">UX/UI</button>
-    </div> -->
+    <!-- <p>(filter in progress)</p> -->
 
-    <!-- <div class="projectsContainer"> -->
+    <div class="menu">
+        <a class="showSingle" target="1">ABOUT</a>
+        <a class="showSingle" target="2">DEV</a>
+        <a class="showSingle" target="3" id="noBorder">UX/UI</a>
+    </div>
 
-        <div class="dev">
-
-            <a href="http://sarahcallison.website/dgm2120/unit9/" target="_blank" class="project-tile">
-                <div class="hoverContainer">
-                    <figure class="project-tile"><img class="project-pic" src="images/giulias.jpg" alt="project">
-                    </figure>
-                    <div class="overlay">
-                        <div class="text">
-                            <p>Giulia's Italian Restaurant</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="baseballCards.html" target="_blank" class="project-tile">
-                <div class="hoverContainer">
-                    <figure class="project-tile"><img class="project-pic" src="images/cards.jpg" alt="project">
-                    </figure>
-                    <div class="overlay">
-                        <div class="text">
-                            <p>Interactive Baseball Cards</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="swPeople.html" target="_blank" class="project-tile">
-                <div class="hoverContainer">
-                    <figure class="project-tile"><img class="project-pic" src="images/people.jpg" alt="project">
-                    </figure>
-                    <div class="overlay">
-                        <div class="text">
-                            <p>Array Prototypes: Filter</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="swShips.html" target="_blank" class="project-tile">
-                <div class="hoverContainer">
-                    <figure class="project-tile"><img class="project-pic" src="images/ships.jpg" alt="project">
-                    </figure>
-                    <div class="overlay">
-                        <div class="text">
-                            <p>Array Prototypes: Sort</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="http://jdawgs.com/" target="_blank" class="project-tile">
-                <div class="hoverContainer">
-                    <figure class="project-tile"><img class="project-pic" src="images/jdawgs.jpg" alt="project">
-                    </figure>
-                    <div class="overlay">
-                        <div class="text">
-                            <p>Inspiration: JDawgs</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="https://jacekjeznach.com/" target="_blank" class="project-tile">
-                <div class="hoverContainer">
-                    <figure class="project-tile"><img class="project-pic" src="images/jack.jpg" alt="project">
-                    </figure>
-                    <div class="overlay">
-                        <div class="text">
-                            <p>Inspiration: Jack Jeznach Portfolio</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="https://www.ysl.com/us" target="_blank" class="project-tile">
-                <div class="hoverContainer">
-                    <figure class="project-tile"><img class="project-pic" src="images/ysl.jpg" alt="project">
-                    </figure>
-                    <div class="overlay">
-                        <div class="text">
-                            <p>Inspiration: Yves Saint Laurent</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="https://www.minuty.com/fr/" target="_blank" class="project-tile">
-                <div class="hoverContainer">
-                    <figure class="project-tile"><img class="project-pic" src="images/minuty.jpg" alt="project">
-                    </figure>
-                    <div class="overlay">
-                        <div class="text">
-                            <p>Inspiration: Minuty</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
+    <div class="about targetDiv" id="div1">
+            <figure class="contactImg"><img class="contactImg" src="images/0306162057a~2.gif"></figure>
+            <div class="about">
+                <p class="name">sarah callison</p>
+                <p class="uvu">Utah Valley University '21</p>
+                <p class="contactInfo">callison.sarah@gmail.com | <a href="https://github.com/sarahsuetoo"
+                        target="_blank">Github</a> | (801) 362-7871</p>
+                <p class="opportunity">Need an intern?</p>
+                <p class="opportunity">Send me an email. I'm not afraid to learn new skills. Every day.
+                    The satisfaction of a job well done keeps me motivated.
+                </p>
+    
+    
+            </div>
         </div>
 
-        <div class="ux-ui">
+    <div class="dev targetDiv" id="div2">
 
-            <a href="pdfs/line_and_shape2.pdf" target="_blank" class="project-tile">
-                <div class="hoverContainer">
-                    <figure class="project-tile"><img class="project-pic" src="images/line_and_shape2.jpg"
-                            alt="project">
-                    </figure>
-                    <div class="overlay">
-                        <div class="text">
-                            <p>Freestyle Design</p>
-                        </div>
+        <a href="http://sarahcallison.website/dgm2120/unit9/" target="_blank" class="project-tile">
+            <div class="hoverContainer">
+                <figure class="project-tile"><img class="project-pic" src="images/giulias.jpg" alt="project">
+                </figure>
+                <div class="overlay">
+                    <div class="text">
+                        <p>Giulia's Italian Restaurant</p>
                     </div>
                 </div>
-            </a>
+            </div>
+        </a>
 
-            <a href="deliverable.html" target="_blank" class="project-tile">
-                <div class="hoverContainer">
-                    <figure class="project-tile"><img class="project-pic" src="images/deliverable.jpg" alt="project">
-                    </figure>
-                    <div class="overlay">
-                        <div class="text">
-                            <p>America's Got Talent Deliverable</p>
-                        </div>
+        <a href="baseballCards.html" target="_blank" class="project-tile">
+            <div class="hoverContainer">
+                <figure class="project-tile"><img class="project-pic" src="images/cards.jpg" alt="project">
+                </figure>
+                <div class="overlay">
+                    <div class="text">
+                        <p>Interactive Baseball Cards</p>
                     </div>
                 </div>
-            </a>
+            </div>
+        </a>
 
-            <a href="pdfs/digital identity brief-delias.pdf" target="_blank" class="project-tile">
-                <div class="hoverContainer">
-                    <figure class="project-tile"><img class="project-pic" src="images/brief.jpg" alt="project">
-                    </figure>
-                    <div class="overlay">
-                        <div class="text">
-                            <p>Digital Identity Brief: Delia's Diner</p>
-                        </div>
+        <a href="swPeople.html" target="_blank" class="project-tile">
+            <div class="hoverContainer">
+                <figure class="project-tile"><img class="project-pic" src="images/people.jpg" alt="project">
+                </figure>
+                <div class="overlay">
+                    <div class="text">
+                        <p>Array Prototypes: Filter</p>
                     </div>
                 </div>
-            </a>
+            </div>
+        </a>
 
-            <a href="pdfs/logoThird.pdf" target="_blank" class="project-tile">
-                <div class="hoverContainer">
-                    <figure class="project-tile"><img class="project-pic" src="images/deliasDiner.jpg" alt="project">
-                    </figure>
-                    <div class="overlay">
-                        <div class="text">
-                            <p>Delia's Diner Logo</p>
-                        </div>
+        <a href="swShips.html" target="_blank" class="project-tile">
+            <div class="hoverContainer">
+                <figure class="project-tile"><img class="project-pic" src="images/ships.jpg" alt="project">
+                </figure>
+                <div class="overlay">
+                    <div class="text">
+                        <p>Array Prototypes: Sort</p>
                     </div>
                 </div>
-            </a>
+            </div>
+        </a>
 
-            <a href="pdfs/cards.pdf" target="_blank" class="project-tile">
-                <div class="hoverContainer">
-                    <figure class="project-tile"><img class="project-pic" src="images/card.jpg" alt="project">
-                    </figure>
-                    <div class="overlay">
-                        <div class="text">
-                            <p>Business Cards</p>
-                        </div>
+        <a href="http://jdawgs.com/" target="_blank" class="project-tile">
+            <div class="hoverContainer">
+                <figure class="project-tile"><img class="project-pic" src="images/jdawgs.jpg" alt="project">
+                </figure>
+                <div class="overlay">
+                    <div class="text">
+                        <p>Inspiration: JDawgs</p>
                     </div>
                 </div>
-            </a>
+            </div>
+        </a>
 
-            <a href="pdfs/face.pdf" target="_blank" class="project-tile">
-                <div class="hoverContainer">
-                    <figure class="project-tile"><img class="project-pic" src="images/face.jpg" alt="project">
-                    </figure>
-                    <div class="overlay">
-                        <div class="text">
-                            <p>Freestyle Design</p>
-                        </div>
+        <a href="https://jacekjeznach.com/" target="_blank" class="project-tile">
+            <div class="hoverContainer">
+                <figure class="project-tile"><img class="project-pic" src="images/jack.jpg" alt="project">
+                </figure>
+                <div class="overlay">
+                    <div class="text">
+                        <p>Inspiration: Jack Jeznach Portfolio</p>
                     </div>
                 </div>
-            </a>
+            </div>
+        </a>
 
-            <a href="pdfs/intro.pef" target="_blank" class="project-tile">
-                <div class="hoverContainer">
-                    <figure class="project-tile"><img class="project-pic" src="images/type.jpg" alt="project">
-                    </figure>
-                    <div class="overlay">
-                        <div class="text">
-                            <p>Typographic Designs</p>
-                        </div>
+        <a href="https://www.ysl.com/us" target="_blank" class="project-tile">
+            <div class="hoverContainer">
+                <figure class="project-tile"><img class="project-pic" src="images/ysl.jpg" alt="project">
+                </figure>
+                <div class="overlay">
+                    <div class="text">
+                        <p>Inspiration: Yves Saint Laurent</p>
                     </div>
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
 
-    <!-- </div> -->
+        <a href="https://www.minuty.com/fr/" target="_blank" class="project-tile">
+            <div class="hoverContainer">
+                <figure class="project-tile"><img class="project-pic" src="images/minuty.jpg" alt="project">
+                </figure>
+                <div class="overlay">
+                    <div class="text">
+                        <p>Inspiration: Minuty</p>
+                    </div>
+                </div>
+            </div>
+        </a>
 
-    <p class="projectHeader">PORTFOLIO</p>
+    </div>
 
+    <div class="ux-ui targetDiv" id="div3">
 
-    <div id="contact">
-        <figure class="contactImg"><img class="contactImg" src="images/0306162057a~2.gif"></figure>
-        <div class="about">
-            <p class="name">sarah callison</p>
-            <p class="uvu">Utah Valley University '21</p>
-            <p class="contactInfo">callison.sarah@gmail.com | <a href="https://github.com/sarahsuetoo"
-                    target="_blank">Github</a> | (801) 362-7871</p>
-            <p class="opportunity">Need an intern?</p>
-            <p class="opportunity">Send me an email. I'm not afraid to learn new skills. Every day.
-                The satisfaction of a job well done keeps me motivated.
-            </p>
+        <a href="pdfs/line_and_shape2.pdf" target="_blank" class="project-tile">
+            <div class="hoverContainer">
+                <figure class="project-tile"><img class="project-pic" src="images/line_and_shape2.jpg" alt="project">
+                </figure>
+                <div class="overlay">
+                    <div class="text">
+                        <p>Freestyle Design</p>
+                    </div>
+                </div>
+            </div>
+        </a>
 
+        <a href="deliverable.html" target="_blank" class="project-tile">
+            <div class="hoverContainer">
+                <figure class="project-tile"><img class="project-pic" src="images/deliverable.jpg" alt="project">
+                </figure>
+                <div class="overlay">
+                    <div class="text">
+                        <p>America's Got Talent Deliverable</p>
+                    </div>
+                </div>
+            </div>
+        </a>
 
-        </div>
+        <a href="pdfs/digital identity brief-delias.pdf" target="_blank" class="project-tile">
+            <div class="hoverContainer">
+                <figure class="project-tile"><img class="project-pic" src="images/brief.jpg" alt="project">
+                </figure>
+                <div class="overlay">
+                    <div class="text">
+                        <p>Digital Identity Brief: Delia's Diner</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="pdfs/logoThird.pdf" target="_blank" class="project-tile">
+            <div class="hoverContainer">
+                <figure class="project-tile"><img class="project-pic" src="images/deliasDiner.jpg" alt="project">
+                </figure>
+                <div class="overlay">
+                    <div class="text">
+                        <p>Delia's Diner Logo</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="pdfs/cards.pdf" target="_blank" class="project-tile">
+            <div class="hoverContainer">
+                <figure class="project-tile"><img class="project-pic" src="images/card.jpg" alt="project">
+                </figure>
+                <div class="overlay">
+                    <div class="text">
+                        <p>Business Cards</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="pdfs/face.pdf" target="_blank" class="project-tile">
+            <div class="hoverContainer">
+                <figure class="project-tile"><img class="project-pic" src="images/face.jpg" alt="project">
+                </figure>
+                <div class="overlay">
+                    <div class="text">
+                        <p>Freestyle Design</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="pdfs/intro.pef" target="_blank" class="project-tile">
+            <div class="hoverContainer">
+                <figure class="project-tile"><img class="project-pic" src="images/type.jpg" alt="project">
+                </figure>
+                <div class="overlay">
+                    <div class="text">
+                        <p>Typographic Designs</p>
+                    </div>
+                </div>
+            </div>
+        </a>
     </div>
 
     <footer>
