@@ -61,6 +61,26 @@ h4 {
     bottom: 385px;
 }
 
+.link {
+  width: 4%;
+  position: relative;
+  bottom: 50px;
+  animation: bounce 2s infinite;
+}
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-7px);
+    }
+    60% {
+      transform: translateY(-3px);
+    }
+  
+}
+
 .projectHeader {
   margin: 70px 0 60px 0;
   font-size: 1.7rem;
@@ -70,6 +90,7 @@ h4 {
 
 div.menu {
   margin-bottom: 25px;
+  padding-right: 15px;
 }
 
 .menu a {
@@ -151,7 +172,7 @@ figure.project-tile {
   }
 
 #div1 {
-    margin-top: 80px;
+    margin-top: 30px;
     display: flex;
     padding: 0 120px;
 }
@@ -211,13 +232,23 @@ img.contactImg {
   -webkit-text-fill-color: transparent;
 } 
 
+.bottomLink {
+  width: 4%;
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+  /* width: 100%;
+  text-align: right;
+  position: fixed;  */
+}
+
   footer {
       background-color: #262626;
       color: #fff;
       padding: 6px 0px;
       font-size: 0.66rem;
       letter-spacing: 2.5px;
-      margin-top: 80px;
+      margin-top: 100px;
   }
 
   footer a {
