@@ -98,7 +98,6 @@ newPlayerButton.addEventListener('click', function () {
     }] 
   }
    })
-   console.log(newPerson)
   createCard(newPerson)
 })
 
