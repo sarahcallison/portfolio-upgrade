@@ -7,6 +7,8 @@ body {
     background-repeat: no-repeat;
 }
 
+/* header and subheading */
+
 #heading {
     color: white;
     letter-spacing: 8px;
@@ -21,6 +23,8 @@ body {
     letter-spacing: 6px;
     margin-bottom: 110px;
 }
+
+/* formatting images and captions */
 
 #tatContainer {
     display: flex;
@@ -62,6 +66,8 @@ font-family: 'Nunito Sans', sans-serif;
 max-width: 175px;
 height: 70px;
 }
+
+/* footer */
 
 footer {
     margin-bottom: 35px;

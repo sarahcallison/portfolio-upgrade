@@ -5,6 +5,8 @@ body {
     box-sizing: border-box;
 }
 
+/* formatting header */
+
 #heading, .logo, .text {
   position: relative;
 }
@@ -20,6 +22,8 @@ height: 200px;
 padding-right: 10px;
 margin: 15px 0px 25px 0px;
 }
+
+/* background stars */
 
 .stars, .twinkling {
     position:absolute;
@@ -37,6 +41,8 @@ margin: 15px 0px 25px 0px;
     z-index:0;
   }
 
+  /* text and links */
+
   P {
     color: white;
     letter-spacing: 9px;
@@ -50,6 +56,8 @@ margin: 15px 0px 25px 0px;
  p a:hover {
     color: rgb(143, 143, 143);
   }
+
+  /* formatting the cards */
 
   .cardContainer {
     display: flex;
@@ -118,6 +126,8 @@ margin: 15px 0px 25px 0px;
   figure {
     margin: 0;
   }
+
+  /* adding new card section */
 
   #add {
     margin: 90px 0px 40px 0px;

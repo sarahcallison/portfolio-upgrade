@@ -15,6 +15,8 @@ a:hover {
     color: rgb(168, 168, 168);  
 }
 
+/* navigation */
+
 #navbar ul {
     text-align: right;
     position: fixed;
@@ -29,6 +31,8 @@ a:hover {
     margin: 0px 0px 30px 25px;
     font-size: .9rem;
 }
+
+/* link to pdf of deliverable */
 
 .pdf {
     display: inline-block;
@@ -65,6 +69,8 @@ img.pdf {
     font-size: 0.85rem;
 }
 
+/* container for all content */
+
 .container {
     margin: 0 10% 0 25%;
     width: 632px;
@@ -72,9 +78,13 @@ img.pdf {
     flex-direction: column;
 }
 
+/* header image */
+
 figure.headerImg {
     margin: 0;
 }
+
+/* text */
 
 .copyHeader {
     font-family: 'Nunito Sans', sans-serif;
@@ -90,6 +100,8 @@ figure.headerImg {
     margin-top: 5px;
     margin-bottom: 45px;
 }
+
+/* formatting images */
 
 img.fig1, figure.fig1 {
     width: 100%;
@@ -122,6 +134,8 @@ figcaption {
     font-size: 0.85rem;
     text-align: left;
 }
+
+/* back to top link */
 
 .topLink {
     text-align: right;

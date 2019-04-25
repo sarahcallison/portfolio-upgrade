@@ -4,6 +4,8 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+/* header section */
+
 img {
     margin-top: 95px;
 }
@@ -11,50 +13,6 @@ img {
 img, #heading, #subHeading {
     position: relative;
 }
-
-.stars, .twinkling {
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    width:100%;
-    height:100%;
-    display:block;
-  }
-  
-  .stars {
-    background:#000 url(images/stars.png) repeat top center;
-    z-index:0;
-  }
-  
-  /* .twinkling{
-    background:transparent url(images/twinkling.png) repeat top center;
-    z-index:1;
-  
-    -moz-animation:move-twink-back 500s linear infinite;
-    -ms-animation:move-twink-back 500s linear infinite;
-    -o-animation:move-twink-back 500s linear infinite;
-    -webkit-animation:move-twink-back 500s linear infinite;
-    animation:move-twink-back 500s linear infinite;
-  }
-   */
-  @keyframes move-twink-back {
-      from {background-position:0 0;}
-      to {background-position:-10000px 5000px;}
-  }
-  @-webkit-keyframes move-twink-back {
-      from {background-position:0 0;}
-      to {background-position:-10000px 5000px;}
-  }
-  @-moz-keyframes move-twink-back {
-      from {background-position:0 0;}
-      to {background-position:-10000px 5000px;}
-  }
-  @-ms-keyframes move-twink-back {
-      from {background-position:0 0;}
-      to {background-position:-10000px 5000px;}
-  }
 
 #heading {
     color: white;
@@ -73,6 +31,26 @@ img, #heading, #subHeading {
     margin-bottom: 30px;
 }
 
+/* background stars */
+
+.stars, .twinkling {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    display:block;
+  }
+  
+  .stars {
+    background:#000 url(images/stars.png) repeat top center;
+    z-index:0;
+  }
+
+  /* image title and caption  */
+
 h4 {
     margin: 0;
     color: yellow;
@@ -82,6 +60,8 @@ p {
     margin: 0;
     color: white;
 }
+
+/* image container */
 
 #ships-container {
     display: flex;
@@ -93,6 +73,8 @@ p {
     position: relative;
 }
 
+/* images */
+
 #ships-container img {
     width: 250px;
     margin-bottom: 35px;
@@ -101,7 +83,6 @@ p {
 .tile {
     padding: 0px 40px 0px 40px;
     width: 250px;
-    /* margin-top: 50px; */
     display: flex;
     flex-direction: column;
 }
