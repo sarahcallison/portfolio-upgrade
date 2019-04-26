@@ -13,26 +13,58 @@
 
 <body>
 
-    <figure><img class="headerImg" src=#></figure>
-    <p>Lipsticks by price. Click on each category to display lipsticks.</p>
+    <figure class="headerImg"><img class="headerImg" src="images/lipstickLogo.png"></figure>
+    <p class="instructions">Click on each category to display your favorite lipsticks by price.</p>
 
     <div class="menu">
-        <a class="showSingle" id="underTen" target="1"><img>Under $10</a>
-        <a class="showSingle" id="underTwenty" target="2"><img>Under $20</a>
-        <a class="showSingle" id="underThirty" target="3"><img>Under $30</a>
-        <a class="showSingle" id="overThirty" target="4"><img>Over $30</a>        
-    </div>
-    <!-- <button id="underTen">Under $10</button>
-    <button id="underTwenty">Under $20</button>
-    <button id="underThirty">Under $30</button>
-    <button id="overThirty">Over $30</button> -->
+        <a class="showSingle" id="underTen" target="1">
+            <div class="menuItem"><img class="menuImage" src="images/red.png">
+                <div class="overlay">
+                    <div class="text">
+                        <p id="red">Under $10</p>
+                    </div>
+                </div>
+            </div>
+        </a>
 
-    <div class="targetDiv" id="div1"></div> 
-    <div class="targetDiv" id="div2"></div> 
-    <div class="targetDiv" id="div3"></div> 
-    <div class="targetDiv" id="div4"></div> 
-    
+        <a class="showSingle" id="underTwenty" target="2">
+            <div class="menuItem"><img class="menuImage" src="images/hotPink.png">
+                <div class="overlay">
+                    <div class="text">
+                        <p id="pink">$10 - $20</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a class="showSingle" id="underThirty" target="3">
+            <div class="menuItem"><img class="menuImage" src="images/purple.png">
+                <div class="overlay">
+                    <div class="text">
+                        <p id="purple">$20 - $30</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a class="showSingle" id="overThirty" target="4">
+            <div class="menuItem"><img class="menuImage" src="images/purpleDark.png">
+                <div class="overlay">
+                    <div class="text">
+                        <p id="darkPurple">Over $30</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="targetDiv" id="div1"></div>
+    <div class="targetDiv" id="div2"></div>
+    <div class="targetDiv" id="div3"></div>
+    <div class="targetDiv" id="div4"></div>
+
     <script src="scripts/lipFinder.js" type="module"></script>
 
 </body>
+
 </html>

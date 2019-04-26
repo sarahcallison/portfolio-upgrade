@@ -22,13 +22,14 @@ const lipPriceList = newLipList.filter(lipstick => {
 
 const priceOrderList = lipPriceList.sort((a, b) => a.price - b.price)
 
-// Create lipstick tiles with image, brand, title, price
+// Set up divs to append lipstick tiles to
 
 const tenContainer = document.getElementById('div1')
 const twentyContainer = document.getElementById('div2')
 const thirtyContainer = document.getElementById('div3')
 const overThirtyContainer = document.getElementById('div4')
 
+// Create lipstick tiles with image, brand, title, price
 
 function createLipTile (arrayArg, divName) {
     arrayArg.forEach(lipstick => {
@@ -46,21 +47,23 @@ function createLipTile (arrayArg, divName) {
         lipImage.className = 'lipImage'
         lipPrice.className = 'lipPrice'
 
-        lipBrand.src = lipstick.brand
-        lipTitle.src = lipstick.name
+        lipBrand.textContent = lipstick.brand
+        lipTitle.textContent = lipstick.name
         lipImage.src = lipstick.image_link
-        lipPrice.src = lipstick.price
+        lipPrice.textContent = lipstick.price
 
-        lipTile.appendChild(lipFigure)
-        lipTile.appendChild(lipBrand)
         lipFigure.appendChild(lipImage)
         lipFigure.appendChild(lipPrice)
+        
+        lipTile.appendChild(lipBrand)
         lipTile.appendChild(lipTitle)
+        lipTile.appendChild(lipFigure)
 
         divName.appendChild(lipTile)          
     });
 }
 
+// filter array of objects by price parameters
 
 let underTenList = priceOrderList.filter(lipstick => {
     if (lipstick.price < 10) {
@@ -86,11 +89,14 @@ let overThirtyList = priceOrderList.filter(lipstick => {
     }
 })
 
-document.getElementById("underTen").onclick = function () { createLipTile(underTenList, tenContainer); };
-document.getElementById("underTwenty").onclick = function () { createLipTile(underTwentyList, twentyContainer); };
-document.getElementById("underThirty").onclick = function () { createLipTile(underThirtyList, thirtyContainer); };
-document.getElementById("overThirty").onclick = function () { createLipTile(overThirtyList, overThirtyContainer); };
+// Call createLipTile with each filter category
 
+createLipTile(underTenList, tenContainer)
+createLipTile(underTwentyList, twentyContainer)
+createLipTile(underThirtyList, thirtyContainer)
+createLipTile(overThirtyList, overThirtyContainer)
+
+// Show/hide on link clink
 
 jQuery(function(){
     $( document ).ready(function(){
