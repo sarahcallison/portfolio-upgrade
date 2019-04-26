@@ -1,5 +1,7 @@
 import { people } from '../data/people.js'
 
+// Get person ID # from person url property 
+
 const getLastNumber = url => {
   let end = url.lastIndexOf('/')
   let start = end - 2
@@ -9,6 +11,9 @@ const getLastNumber = url => {
   return url.slice(start, end)
 }
 
+// running getLastNumber() on people array and assigning each person id property
+// to personID variable
+
 people.forEach(person => {
   let personID = getLastNumber(person.url)
   person.id = personID
@@ -16,11 +21,16 @@ people.forEach(person => {
   person.imagePath = `https://starwars-visualguide.com/assets/img/characters/${personID}.jpg`
 })
 
+// filtering people array for first 25 items
+
 const allStars = people.filter(person => {
   if (person.id <= 26) {
     return person
   }
 })
+
+// Creating front and back of card
+// Append card front and back to HTML container
 
 const mainContainer = document.querySelector('.cardContainer')
 
@@ -72,7 +82,11 @@ function createCard(arrayArg) {
 })
 }
 
+// Create cards for each item in allStars array
+
 createCard(allStars)
+
+// Constructor
 
 class Card {
   constructor(id, name, height, mass) {
@@ -83,6 +97,10 @@ class Card {
   }
 }
 
+// Event listener for submit button
+// Filter people array for ID entered in text input
+// Create new object with the person's data if person.ID matches inputted ID
+// run CreateCard() with new object as param
 
 const newPlayerButton = document.querySelector('button')
 newPlayerButton.addEventListener('click', function () {

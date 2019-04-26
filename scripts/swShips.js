@@ -1,5 +1,9 @@
 import { starships } from '../data/starships.js';
 
+// Filtering starships array for "km letters"
+// Slicing km off of the string
+// Return only max_atmosphering_speed properties that don't equal n/a or unknown
+
 let newShips = starships.filter(function (val) {
     let speedStr = val.max_atmosphering_speed
     let speedIndex = speedStr.indexOf('km')
@@ -9,9 +13,11 @@ let newShips = starships.filter(function (val) {
     return val.max_atmosphering_speed !== "n/a" && val.max_atmosphering_speed !== "unknown"
 });
 
+// Sorting filtered array, newShips, by max_atmosphering_speed in ascending order
 
 const fastest = newShips.sort((a, b) => a.max_atmosphering_speed - b.max_atmosphering_speed);
 
+// Setting up getting ship ID from ship url property
 
 const getLastNumber = url => {
     let end = url.lastIndexOf('/')
@@ -21,6 +27,9 @@ const getLastNumber = url => {
     }
     return url.slice(start, end)
 }
+
+// Create image url with getLastNumber() on each ship in fastest array
+// Assign images not available on Star Wars Visual Guide to Star Wars Logo
 
 fastest.forEach(starship => {
     let imageURL = getLastNumber(starship.url)
@@ -65,7 +74,7 @@ fastest.forEach(starship => {
     else starship.imagePath = `https://starwars-visualguide.com/assets/img/starships/${imageURL}.jpg`
 })
 
-
+// Create image tiles and append to HTML container
 
 fastest.forEach(starship => {
     let shipsCont = document.getElementById('ships-container')
@@ -89,6 +98,5 @@ fastest.forEach(starship => {
     shipsCont.appendChild(tile)
 });
 
-console.log(fastest)
 
 

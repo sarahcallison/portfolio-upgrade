@@ -1,8 +1,10 @@
 import { people } from '../data/people.js'
 
+// Filter people array for items with Tattooine homeworld as url property
 
 const tatooinePeeps = people.filter(person => person.homeworld === "https://swapi.co/api/planets/1/");
 
+// Set up getting person ID # from person url property
 
 const getLastNumber = url => {
     let end = url.lastIndexOf('/')
@@ -13,6 +15,9 @@ const getLastNumber = url => {
     return url.slice(start, end)
 }
 
+// Adding quote property for each item in tatooinePeeps array
+// Run getLastNumber() for each item
+// Create imagePath property for each item and assign it value of url with person ID number 
 
 tatooinePeeps.forEach(person => {
     if (person.name === "Luke Skywalker") {
@@ -48,6 +53,7 @@ tatooinePeeps.forEach(person => {
     person.imagePath = `https://starwars-visualguide.com/assets/img/characters/${imageURL}.jpg`
 });
 
+// Create image tiles
 
 tatooinePeeps.forEach(person => {
     let tatContainer = document.getElementById('tatContainer')
@@ -68,18 +74,5 @@ tatooinePeeps.forEach(person => {
     tatContainer.appendChild(tileElement)
 })
 
-
-
-    // tatooinePeeps.forEach(person => {
-    //     let tatListCont = document.getElementById('tatListCont')
-
-    //     let tatList = document.createElement('div')
-    //     tatList.className = 'tatList'
-    //     let tatNameElement = document.createElement('p')
-    //     tatList.appendChild(tatNameElement)
-    //     tatNameElement.textContent = person.name
-
-    //     tatListCont.appendChild(tatList)
-    // });
 
 
