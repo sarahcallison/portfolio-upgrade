@@ -9,7 +9,7 @@ body {
 #intro {
   margin-right: 100px;
   max-height: 100vh;
-  min-height: 35vh;
+  min-height: 100vh;
 }
 
 figure.powder {
@@ -106,7 +106,7 @@ a:hover {
 .dev, .ux-ui {
   display: flex;
   flex-wrap: wrap;
-  padding: 0px 100px;
+  padding: 0px 10%;
   justify-content: center;
   margin-top: 25px;
 }
@@ -256,25 +256,21 @@ footer a {
 /* mobile */
 
 @media only screen and (max-width: 600px) {
-  nav ul {
-    text-align: center;
-  }
-  nav ul li {
-    margin: 20px;
-  }
-  .project {
-    margin: 40px 0;
-  }
-  #intro {
+    #intro {
     padding: 0;
     margin-right: 0;
   }
-  figure.powder, img.powder {
-    width: 100%;
+  figure.powder {
+    width: 120%;
   }
+
+  img.powder {
+    width: 100%; 
+  }
+
   .nameHeader, h4 {
     position: relative;
-    bottom: 200px;
+    bottom: 260px;
     right: 25px;
   }
   .nameHeader {
@@ -284,5 +280,21 @@ footer a {
   h4 {
     font-size: .9rem;
     letter-spacing: 10px;
+  }
+
+  .link {
+  display: none;
+  }
+
+  .portfolioHeader {
+    margin-bottom: 50px;
+  }
+
+  .bottomLink {
+  display: none;
+  }
+
+  footer {
+    font-size: 0.6rem;
   }
 }

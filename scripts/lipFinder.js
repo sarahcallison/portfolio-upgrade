@@ -35,10 +35,10 @@ function createLipTile (arrayArg, divName) {
     arrayArg.forEach(lipstick => {
         let lipTile = document.createElement('div')
         let lipBrand = document.createElement('h4')
-        let lipTitle = document.createElement('p')
+        let lipTitle = document.createElement('figcaption')
         let lipFigure = document.createElement('figure')
         let lipImage = document.createElement('img')
-        let lipPrice = document.createElement('figcaption')
+        let lipPrice = document.createElement('p')
 
         lipTile.className = 'lipTile'
         lipBrand.className = 'lipBrand'
@@ -50,14 +50,14 @@ function createLipTile (arrayArg, divName) {
         lipBrand.textContent = lipstick.brand
         lipTitle.textContent = lipstick.name
         lipImage.src = lipstick.image_link
-        lipPrice.textContent = lipstick.price
+        lipPrice.textContent = "$" + lipstick.price
 
         lipFigure.appendChild(lipImage)
-        lipFigure.appendChild(lipPrice)
+        lipFigure.appendChild(lipTitle)
         
         lipTile.appendChild(lipBrand)
-        lipTile.appendChild(lipTitle)
         lipTile.appendChild(lipFigure)
+        lipTile.appendChild(lipPrice)
 
         divName.appendChild(lipTile)          
     });
