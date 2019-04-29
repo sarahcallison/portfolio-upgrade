@@ -118,7 +118,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 325px;
+    height: 335px;
     width: 210px;
     border: 2px solid white;
     border-radius: 5%;
@@ -159,4 +159,12 @@ a {
 .lipTitle {
     text-align: left;
     color: white;
+}
+
+.lipLink {
+    text-decoration: none;
+}
+
+.lipLink:hover {
+    opacity: 0.4;
 }

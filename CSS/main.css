@@ -14,6 +14,11 @@ body {
 
 figure.powder {
   margin: 0;
+  height: 100vh;
+}
+
+img.powder {
+  height: 100%;
 }
 
 .nameHeader, h4 {
@@ -26,7 +31,7 @@ figure.powder {
   font-size: 4rem;
   letter-spacing: 35px;
   padding-left: 120px;
-  bottom: 400px;
+  bottom: 380px;
 }
 
 h4 {
@@ -35,7 +40,7 @@ h4 {
   font-size: 1.3rem;
   letter-spacing: 18px;
   padding-left: 100px;
-  bottom: 385px;
+  bottom: 370px;
 }
 
 /* arrow link */
@@ -259,9 +264,6 @@ footer a {
     #intro {
     padding: 0;
     margin-right: 0;
-  }
-  figure.powder {
-    width: 120%;
   }
 
   img.powder {

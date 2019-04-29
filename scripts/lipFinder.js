@@ -33,6 +33,7 @@ const overThirtyContainer = document.getElementById('div4')
 
 function createLipTile (arrayArg, divName) {
     arrayArg.forEach(lipstick => {
+        let lipLink = document.createElement('a')
         let lipTile = document.createElement('div')
         let lipBrand = document.createElement('h4')
         let lipTitle = document.createElement('figcaption')
@@ -40,6 +41,7 @@ function createLipTile (arrayArg, divName) {
         let lipImage = document.createElement('img')
         let lipPrice = document.createElement('p')
 
+        lipLink.className = 'lipLink'
         lipTile.className = 'lipTile'
         lipBrand.className = 'lipBrand'
         lipTitle.className = 'lipTitle'
@@ -47,6 +49,8 @@ function createLipTile (arrayArg, divName) {
         lipImage.className = 'lipImage'
         lipPrice.className = 'lipPrice'
 
+        lipLink.href = lipstick.product_link
+        lipLink.target = '_blank'
         lipBrand.textContent = lipstick.brand
         lipTitle.textContent = lipstick.name
         lipImage.src = lipstick.image_link
@@ -58,10 +62,13 @@ function createLipTile (arrayArg, divName) {
         lipTile.appendChild(lipBrand)
         lipTile.appendChild(lipFigure)
         lipTile.appendChild(lipPrice)
+        lipLink.appendChild(lipTile)
 
-        divName.appendChild(lipTile)          
+        divName.appendChild(lipLink)          
     });
 }
+
+console.log(priceOrderList)
 
 // filter array of objects by price parameters
 
@@ -109,4 +116,13 @@ jQuery(function(){
    });
 });
 
+// Open all product links in new tab
+
+$(function(){
+
+    $(".lipLink").click(function(e) {
+        e.preventDefault();
+        window.open(this.href);
+    });
+});
 
