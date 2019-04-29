@@ -9,6 +9,7 @@ body {
 #intro {
   margin-right: 100px;
   max-height: 100vh;
+  min-height: 35vh;
 }
 
 figure.powder {
@@ -61,22 +62,22 @@ h4 {
 /* portfolio section */
 
 .portfolioHeader {
-  margin: 70px 0 60px 0;
-  font-size: 1.7rem;
-  padding-left: 30px;
-  letter-spacing: 25px;
+  margin: 70px 0 70px 0;
+  font-size: 2rem;
+  padding: 0;
+  letter-spacing: 15px;
+  font-family: 'Nunito Sans ExtraLight', sans-serif;
 }
 
 /* div toggle */
 
 div.menu {
-  margin-bottom: 25px;
-  padding-right: 15px;
+  margin-bottom: 15px;
+  padding-right: 23px;
 }
 
 a {
   text-decoration: none;
-  font-family: "Nunito Sans", sans-serif;
   color: #1f1f1f;
   letter-spacing: 2px;
 }
@@ -89,6 +90,7 @@ a:hover {
   border-right: 1px solid rgb(85, 84, 84);
   cursor: pointer;
   padding: 0 15px;
+  font-size: 1.1rem;
 }
 
 /* .menu a:active {
@@ -106,15 +108,15 @@ a:hover {
   flex-wrap: wrap;
   padding: 0px 100px;
   justify-content: center;
-  margin-top: 35px;
+  margin-top: 25px;
 }
 
 /* project tiles */
 
 .hoverContainer {
   position: relative;
-  width: 280px;
-  height: 175px;
+  width: 330px;
+  height: 225px;
   margin: 5px;
 }
 
@@ -167,20 +169,20 @@ figure.project-tile {
 /* about div */
 
 #div1 {
-  margin-top: 50px;
+  margin: 50px 25% 0 25%;
   display: flex;
-  padding: 0 120px;
 }
 
 .about {
   text-align: left;
   margin: auto 0 auto 25px;
+  width: 65%;
 }
 
 figure.contactImg {
-  width: 40%;
-  margin: auto 0;
-  padding-left: 180px;
+  width: 35%;
+  margin: auto;
+ 
 }
 
 img.contactImg {
@@ -191,8 +193,9 @@ img.contactImg {
 
 .name {
   font-size: 1.5rem;
-  letter-spacing: 7px;
+  letter-spacing: 2px;
   margin: 0;
+  font-family: 'Nunito Sans ExtraLight', sans-serif;  
 }
 
 .uvu {
@@ -203,7 +206,7 @@ img.contactImg {
 }
 
 .contactInfo a {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   letter-spacing: 1.5px;
   font-family: 'Nunito Sans ExtraLight', sans-serif;
 }
@@ -215,7 +218,7 @@ img.contactImg {
 }
 
 .contactInfo {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   letter-spacing: 1.5px;
   font-weight: bold;
   background: -webkit-linear-gradient(left, turquoise, red);
