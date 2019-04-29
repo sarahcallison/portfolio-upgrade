@@ -81,7 +81,7 @@ p {
 }
 
 .tile {
-    padding: 0px 40px 0px 40px;
+    padding: 0 40px 0 40px;
     width: 250px;
     display: flex;
     flex-direction: column;
