@@ -174,18 +174,18 @@ figure.project-tile {
 /* about div */
 
 #div1 {
-  margin: 50px 25% 0 25%;
+  margin: 50px 22% 0 27%;
   display: flex;
 }
 
 .aboutContainer {
   text-align: left;
   margin: auto 0 auto 25px;
-  width: 65%;
+  width: 60%;
 }
 
 figure.contactImg {
-  width: 35%;
+  width: 40%;
   margin: auto;
 }
 
