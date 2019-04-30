@@ -116,13 +116,4 @@ jQuery(function(){
    });
 });
 
-// Open all product links in new tab
-
-$(function(){
-
-    $(".lipLink").click(function(e) {
-        e.preventDefault();
-        window.open(this.href);
-    });
-});
 
