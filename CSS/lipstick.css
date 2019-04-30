@@ -87,22 +87,6 @@ a {
     opacity: 1;
   }
 
-  /* #red {
-      color: red;
-  }
-
-  #pink {
-      color: rgb(251, 0, 126);
-  }
-
-  #purple {
-      color: rgb(196, 40, 175);
-  }
-
-  #darkPurple {
-      color: purple;
-  } */
-
   /* container */
 
 .targetDiv {
@@ -112,7 +96,7 @@ a {
     margin: 9% 10%;
 }
 
-/* lip tiles */
+/* lip tiles container */
 
 .lipTile {
     display: flex;
@@ -126,6 +110,8 @@ a {
     margin: 0 15px 35px 15px;
 }
 
+/* lip tile images */
+
 .lipFigure {
     height: 175px;
     width: 175px;
@@ -138,9 +124,11 @@ a {
     border-radius: 5%;
 }
 
+/* lip tile text */
+
 .lipBrand, .lipTitle {
     margin: 0;
-    width: 150px;
+    width: 180px;
 }
 
 .lipBrand, .lipPrice {
@@ -168,3 +156,12 @@ a {
 .lipLink:hover {
     opacity: 0.4;
 }
+
+/* back to top link */
+
+.bottomLink {
+    width: 3.5%;
+    display: inline-block;
+    float: right;
+    margin: 0 2% 3% 0;
+  }
